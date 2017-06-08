@@ -14,3 +14,8 @@
 
 
 @end
+
+@interface OCLogoViewLayer : CALayer
+
+
+@end
