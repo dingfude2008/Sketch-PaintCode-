@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "OCLogoView.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) UIView *logo;
 
 @end
 
@@ -16,8 +19,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.logo = [[OCLogoView alloc] initWithFrame:CGRectMake(110, 110, 10, 10)];
+    
+    
+    
+    
+    self.view.backgroundColor = [UIColor grayColor];
+    
+    [self.view addSubview:self.logo];
+    
 }
+
 
 
 - (void)didReceiveMemoryWarning {

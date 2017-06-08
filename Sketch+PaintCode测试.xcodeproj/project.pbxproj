@@ -13,6 +13,8 @@
 		ADD257371EE8E15900A5CF82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD257351EE8E15900A5CF82 /* Main.storyboard */; };
 		ADD257391EE8E15900A5CF82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD257381EE8E15900A5CF82 /* Assets.xcassets */; };
 		ADD2573C1EE8E15900A5CF82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD2573A1EE8E15900A5CF82 /* LaunchScreen.storyboard */; };
+		ADD257451EE8E1AB00A5CF82 /* OCLogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD257441EE8E1AB00A5CF82 /* OCLogoView.m */; };
+		ADD257481EE8E42300A5CF82 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD257471EE8E42300A5CF82 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		ADD257381EE8E15900A5CF82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADD2573B1EE8E15900A5CF82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADD2573D1EE8E15900A5CF82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADD257431EE8E1AB00A5CF82 /* OCLogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCLogoView.h; sourceTree = "<group>"; };
+		ADD257441EE8E1AB00A5CF82 /* OCLogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCLogoView.m; sourceTree = "<group>"; };
+		ADD257471EE8E42300A5CF82 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADD257481EE8E42300A5CF82 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 			children = (
 				ADD2572B1EE8E15900A5CF82 /* Sketch+PaintCode测试 */,
 				ADD2572A1EE8E15900A5CF82 /* Products */,
+				ADD257461EE8E42300A5CF82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,8 @@
 				ADD2573A1EE8E15900A5CF82 /* LaunchScreen.storyboard */,
 				ADD2573D1EE8E15900A5CF82 /* Info.plist */,
 				ADD2572C1EE8E15900A5CF82 /* Supporting Files */,
+				ADD257431EE8E1AB00A5CF82 /* OCLogoView.h */,
+				ADD257441EE8E1AB00A5CF82 /* OCLogoView.m */,
 			);
 			path = "Sketch+PaintCode测试";
 			sourceTree = "<group>";
@@ -77,6 +86,14 @@
 				ADD2572D1EE8E15900A5CF82 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADD257461EE8E42300A5CF82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADD257471EE8E42300A5CF82 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +127,7 @@
 				TargetAttributes = {
 					ADD257281EE8E15900A5CF82 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6EM7RHL4TV;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADD257451EE8E1AB00A5CF82 /* OCLogoView.m in Sources */,
 				ADD257341EE8E15900A5CF82 /* ViewController.m in Sources */,
 				ADD257311EE8E15900A5CF82 /* AppDelegate.m in Sources */,
 				ADD2572E1EE8E15900A5CF82 /* main.m in Sources */,
@@ -272,6 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6EM7RHL4TV;
 				INFOPLIST_FILE = "Sketch+PaintCode测试/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dfd.testApp.Sketch-PaintCode--";
@@ -283,6 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6EM7RHL4TV;
 				INFOPLIST_FILE = "Sketch+PaintCode测试/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dfd.testApp.Sketch-PaintCode--";
@@ -309,6 +330,7 @@
 				ADD257421EE8E15900A5CF82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
